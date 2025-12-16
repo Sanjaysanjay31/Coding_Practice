@@ -1,0 +1,23 @@
+https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true
+
+if __name__ == '__main__':
+    N = int(input())
+    r = []
+    while N > 0:
+        s=input().strip().split()
+        if s[0] == "insert" :
+            r.insert(int(s[1]),int(s[2]))
+        elif s[0]=="print" :
+            print(r)
+        elif s[0]=="remove" :
+            r.remove(int(s[1]))
+        elif s[0]=="append" :
+            r.append(int(s[1]))
+        elif s[0]=="sort" :
+            r.sort()
+        elif s[0]=="pop" :
+            r.pop()
+        elif s[0] == "reverse":
+            r.reverse()
+        N-=1
+
